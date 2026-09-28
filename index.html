@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พื้นที่พักใจ - บริษัท เงินดีมีชัย จำกัด (Mind-Relief Hub)</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #e8f5e9;
+            --secondary: #0288d1;
+            --secondary-light: #e0f7fa;
+            --dark: #263238;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1b5e20);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin-top: 0.5rem; opacity: 0.9; }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+            transform: translateY(-2px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .item-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            background: #fafafa;
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+        }
+
+        .price-badge {
+            background-color: var(--secondary-light);
+            color: var(--secondary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e0e0e0;
+            color: #555;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>พื้นที่พักใจ (Mind-Relief Hub)</h1>
+    <p>สวัสดิการดูแลจิตใจสำหรับพนักงาน บริษัท เงินดีมีชัย จำกัด</p>
+</header>
+
+<div class="container">
+
+    <!-- Section 1: Intro & Assessment -->
+    <div class="card">
+        <h2>1. ประเมินความเครียด & วิเคราะห์ความชอบด้วย AI</h2>
+        <p>เริ่มต้นดูแลจิตใจด้วยแบบประเมินสั้นๆ เพื่อให้ AI ช่วยวิเคราะห์ความชอบและปรับแต่งบรรยากาศ รวมถึงเพื่อนคุย 3D ที่ตรงกับใจคุณมากที่สุด</p>
+        <button class="btn" onclick="alert('ระบบกำลังเริ่มต้นแบบประเมินความเครียดและวิเคราะห์ความชอบด้วย AI...')">เริ่มประเมินจิตใจ</button>
+    </div>
+
+    <!-- Section 2: AI Avatar 3D Selection -->
+    <div class="card">
+        <h2>2. เลือกเพื่อนคุยผ่อนคลาย (AI 3D Companions)</h2>
+        <p>พูดคุยระบายความรู้สึกผ่านการพิมพ์หรือสนทนาเสียงกับ AI 3D (คำตอบอ้างอิงจากคลังข้อมูลดิบของจิตแพทย์จริง)</p>
+        <div class="grid">
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400" alt="หมอแมว 3D">
+                <h3>หมอแมว 3D</h3>
+                <p>อบอุ่น ขี้อ้อน รับฟังทุกความกังวลใจ</p>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400" alt="น้องหมา 3D">
+                <h3>น้องหมา 3D</h3>
+                <p>ร่าเริง ให้พลังบวกและคำแนะนำดีๆ</p>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400" alt="กระต่าย 3D">
+                <h3>น้องกระต่าย 3D</h3>
+                <p>อ่อนโยน ปลอบประโลมจิตใจ</p>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400" alt="รถยนต์เท่ๆ 3D">
+                <h3>รถยนต์เท่ๆ 3D</h3>
+                <p>คุยชิลๆ สายลุย ผ่อนคลายสบายๆ</p>
+            </div>
+        </div>
+        <p style="font-size:0.9rem; color:#666; margin-top:1rem;">*มีให้เลือกเพิ่มเติมในระบบ: ไก่, เต่า, หมู, ยีราฟ, อัลปาก้า, เพนกวิน</p>
+    </div>
+
+    <!-- Section 3: Natural Scenes Selection -->
+    <div class="card">
+        <h2>3. เลือกบรรยากาศฉากพักใจ (3D Natural Scenes)</h2>
+        <p>สร้างบรรยากาศรอบตัวด้วยวิวและเสียงธรรมชาติเพื่อความผ่อนคลายสูงสุด ไม่ตึงเครียด</p>
+        <div class="grid">
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="ริมทะเล">
+                <h3>ริมทะเลรับลม</h3>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=400" alt="น้ำตก">
+                <h3>น้ำตกเย็นสบาย</h3>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400" alt="สวนสาธารณะ">
+                <h3>สวนสาธารณะ & ต้นไม้</h3>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400" alt="ภูเขา">
+                <h3>ภูเขา & ริมบึง</h3>
+            </div>
+        </div>
+        <p style="font-size:0.9rem; color:#666; margin-top:1rem;">*มีฉากให้เลือกเพิ่มเติม: บ้านสวยๆ, ริมน้ำ</p>
+    </div>
+
+    <!-- Section 4: Human Doctor Consultation -->
+    <div class="card">
+        <h2>4. นัดหมายจิตแพทย์ผู้เชี่ยวชาญ (รพ. อ้อมน้อยสุขภาพดี555)</h2>
+        <p>เลือกโหงวเฮ้ง/หน้าตาจิตแพทย์ และจองคิวตามวัน-เวลาในปฏิทินว่าง (มีช่วงหลังเลิกงานและวันหยุด)</p>
+        <div class="grid">
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400" alt="พญ. ใจดี มีสุข">
+                <h3>พญ. ใจดี มีสุข</h3>
+                <p>จิตแพทย์ผู้เชี่ยวชาญ (หญิง)</p>
+                <div class="price-badge">ปกติ 900B (จ่ายจริง 630B)</div>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400" alt="นพ. สมศักดิ์ รักษาใจ">
+                <h3>นพ. สมศักดิ์ รักษาใจ</h3>
+                <p>จิตแพทย์ผู้เชี่ยวชาญ (ชาย)</p>
+                <div class="price-badge">ปกติ 900B (จ่ายจริง 630B)</div>
+            </div>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1594824813566-88855ce78347?w=400" alt="พญ. นภา อารมณ์ดี">
+                <h3>พญ. นภา อารมณ์ดี</h3>
+                <p>จิตแพทย์ผู้เชี่ยวชาญ (หญิง)</p>
+                <div class="price-badge">วันหยุด 1,350B (จ่ายจริง 945B)</div>
+            </div>
+        </div>
+        <p style="font-size:0.9rem; color:#2e7d32; font-weight:bold; margin-top:1rem;">* หมายเหตุ: พนักงานจ่ายเพียง 70% และบริษัท เงินดีมีชัย จำกัด ช่วยซัพพอร์ตให้ 30%</p>
+        <br>
+        <center><button class="btn" onclick="alert('ระบบนำเข้าสู่ปฏิทินจองคิวลับแบบไม่เปิดเผยตัวตน (Zero-Knowledge Calendar)')">เช็ควัน-เวลาว่าง & จองคิวจิตแพทย์</button></center>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 บริษัท เงินดีมีชัย จำกัด - ระบบสวัสดิการดูแลสุขภาวะทางจิตพนักงาน (De-escalation Hub)</p>
+</footer>
+
+</body>
+</html>
